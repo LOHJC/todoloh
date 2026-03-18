@@ -40,6 +40,9 @@ html {
 
 .textarea {
 	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 [contenteditable] {
@@ -84,14 +87,6 @@ html {
 	.round_button {
 		width: 4.5vh;
 		height: 4.5vh;
-	}
-
-	.delete_item,
-	.move_icon,
-	#pulldrop {
-		height: 3vh;
-		width: 3vh;
-		background-size: 3vh 3vh;
 	}
 
 	#home_button,
@@ -156,14 +151,6 @@ html {
 	.round_button {
 		width: 4.5vw;
 		height: 4.5vw;
-	}
-
-	.delete_item,
-	.move_icon,
-	#pulldrop {
-		height: 3vw;
-		width: 3vw;
-		background-size: 3vw 3vw;
 	}
 
 	#home_button,
@@ -451,26 +438,10 @@ button:hover {
 
 .delete_item {
 	background-image: url("delete.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	opacity: 0.5;
-	cursor: pointer;
-}
-
-.delete_item:hover {
-	opacity: 1;
 }
 
 .move_icon {
 	background-image: url("move.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	opacity: 0.5;
-	cursor: pointer;
-}
-
-.move_icon:hover {
-	opacity: 1;
 }
 
 
@@ -478,12 +449,21 @@ button:hover {
 	height: 100%;
 	width: 100%;
 	background-image: url("dropdown.png");
+}
+
+.delete_item,
+.move_icon,
+#pulldrop {
+	height: 80%;
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: contain;
 	opacity: 0.5;
 	cursor: pointer;
 }
 
+.delete_item:hover,
+.move_icon:hover,
 #pulldrop:hover {
 	opacity: 1;
 }

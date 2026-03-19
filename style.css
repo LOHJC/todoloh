@@ -10,20 +10,20 @@
 	/*https://www.canva.com/colors/color-palettes/water-foam/*/
 
 
-	--main-color: #98D7C2;
-	--main-bg-color: #167D7F;
+	--main-color: #fafafa;
+	--main-bg-color: #333333;
 
-	--main-btn-hover-color: #B4F8C8;
-	--main-btn-hover-bg-color: #29A0B1;
+	--main-btn-hover-color: #f0f0f0;
+	--main-btn-hover-bg-color: #7f7f7f;
 
-	--main-todo-color: #A0E7E5;
-	--sub-todo-color: #B6E2D3;
+	--main-todo-color: #55aaff;
+	--sub-todo-color: #88CCFF;
 	
-	--main-working-color: #FFD898;
+	--main-working-color: #ffaa55;
 	--sub-working-color: #FFC680;
-	
-	--main-done-color: #A3EBB1;
-	--sub-done-color: #B1D8B7;
+
+	--main-done-color: #a5ffa5;
+	--sub-done-color: #c8fac8;
 }
 
 html {

@@ -18,7 +18,7 @@
 
 	--main-todo-color: #55aaff;
 	--sub-todo-color: #88CCFF;
-	
+
 	--main-working-color: #ffaa55;
 	--sub-working-color: #FFC680;
 
@@ -62,18 +62,6 @@ html {
 
 	.item {
 		border-radius: 2vh;
-	}
-
-	.main_todo_item,
-	.main_working_item,
-	.main_done_item,
-	.sub_todo_item,
-	.sub_working_item,
-	.sub_done_item {
-		min-height: 3vh;
-		border-radius: 1vh;
-		padding: 1vh 0;
-		margin: 1vh 0;
 	}
 
 	.textarea {
@@ -126,18 +114,6 @@ html {
 
 	.item {
 		border-radius: 2vw;
-	}
-
-	.main_todo_item,
-	.main_working_item,
-	.main_done_item,
-	.sub_todo_item,
-	.sub_working_item,
-	.sub_done_item {
-		min-height: 3vw;
-		border-radius: 1vw;
-		padding: 1vw 0;
-		margin: 1vw;
 	}
 
 	.textarea {
@@ -333,6 +309,9 @@ button:hover {
 	align-items: center;
 	justify-content: space-around;
 	font-weight: bold;
+	padding: 0.25rem 0;
+	margin: 0.25rem 0;
+	border-radius: 0.25rem;
 }
 
 .sub_todo_item,
@@ -344,6 +323,9 @@ button:hover {
 	grid-template-columns: 5% 65% 10%;
 	align-items: center;
 	justify-content: space-around;
+	padding: 0.25rem 0;
+	margin: 0.25rem 0;
+	border-radius: 0.25rem;
 }
 
 .item {

@@ -6,23 +6,24 @@
 	word-wrap: break-word;
 
 	/*https://www.canva.com/colors/color-palettes/rosettes-and-cream/*/
-	--spearmint: #B6E2D3;
-
 	/*https://www.canva.com/colors/color-palettes/pastel-dreams/*/
-	--mint: #B4F8C8;
-	--tiffany-blue: #A0E7E5;
-
 	/*https://www.canva.com/colors/color-palettes/water-foam/*/
-	--mint2: #DDFFE7;
-	--spearmint2: #98D7C2;
-	--teal-green: #167D7F;
-	--teal: #29A0B1;
 
-	/*from canva too*/
-	--light-orange: #FFD898;
-	--dark-orange: #FFC680;
-	--neon-green: #A3EBB1;
-	--kelly-green: #B1D8B7;
+
+	--main-color: #98D7C2;
+	--main-bg-color: #167D7F;
+
+	--main-btn-hover-color: #B4F8C8;
+	--main-btn-hover-bg-color: #29A0B1;
+
+	--main-todo-color: #A0E7E5;
+	--sub-todo-color: #B6E2D3;
+	
+	--main-working-color: #FFD898;
+	--sub-working-color: #FFC680;
+	
+	--main-done-color: #A3EBB1;
+	--sub-done-color: #B1D8B7;
 }
 
 html {
@@ -176,7 +177,7 @@ body {
 	display: grid;
 	height: 100%;
 	grid-template-rows: 10% 85% 5%;
-	background-color: var(--mint2);
+	background-color: var(--main-color);
 }
 
 .text {
@@ -188,8 +189,8 @@ footer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: var(--teal-green);
-	color: var(--spearmint2);
+	background-color: var(--main-bg-color);
+	color: var(--main-color);
 	font-weight: bold;
 }
 
@@ -214,8 +215,8 @@ footer a:hover {
 
 .content_button {
 	border: none;
-	background: var(--teal-green);
-	color: var(--spearmint2);
+	background: var(--main-bg-color);
+	color: var(--main-color);
 	font-weight: bold;
 	border-radius: 5px;
 	margin: 1% 0;
@@ -228,19 +229,19 @@ footer a:hover {
 }
 
 .content_button label:hover {
-	background: var(--teal);
-	color: var(--mint);
+	background: var(--main-btn-hover-bg-color);
+	color: var(--main-btn-hover-color);
 }
 
 .content_button:hover {
-	background: var(--teal);
-	color: var(--mint);
+	background: var(--main-btn-hover-bg-color);
+	color: var(--main-btn-hover-color);
 }
 
 button {
 	border: none;
-	background: var(--teal-green);
-	color: var(--spearmint2);
+	background: var(--main-bg-color);
+	color: var(--main-color);
 	font-weight: bold;
 	border-radius: 5px;
 	margin: 1% 0;
@@ -249,8 +250,8 @@ button {
 }
 
 button:hover {
-	background: var(--teal);
-	color: var(--mint);
+	background: var(--main-btn-hover-bg-color);
+	color: var(--main-btn-hover-color);
 }
 
 #todo_menu {
@@ -306,15 +307,15 @@ button:hover {
 /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_scrollbar */
 
 #todo_div::-webkit-scrollbar-thumb {
-	background-color: var(--spearmint);
+	background-color: var(--sub-todo-color);
 }
 
 #working_div::-webkit-scrollbar-thumb {
-	background-color: var(--dark-orange);
+	background-color: var(--sub-working-color);
 }
 
 #done_div::-webkit-scrollbar-thumb {
-	background-color: var(--kelly-green);
+	background-color: var(--sub-done-color);
 }
 
 /*
@@ -354,27 +355,27 @@ button:hover {
 }
 
 .main_todo_item {
-	background-color: var(--tiffany-blue);
+	background-color: var(--main-todo-color);
 }
 
 .sub_todo_item {
-	background-color: var(--spearmint);
+	background-color: var(--sub-todo-color);
 }
 
 .main_working_item {
-	background-color: var(--light-orange);
+	background-color: var(--main-working-color);
 }
 
 .sub_working_item {
-	background-color: var(--dark-orange);
+	background-color: var(--sub-working-color);
 }
 
 .main_done_item {
-	background-color: var(--neon-green);
+	background-color: var(--main-done-color);
 }
 
 .sub_done_item {
-	background-color: var(--kelly-green);
+	background-color: var(--sub-done-color);
 }
 
 .round_button {
@@ -390,42 +391,42 @@ button:hover {
 }
 
 #add_main_todo_item {
-	background-color: var(--tiffany-blue);
+	background-color: var(--main-todo-color);
 	background-image: url("add.png");
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
 .add_sub_todo_item {
-	background-color: var(--spearmint);
+	background-color: var(--sub-todo-color);
 	background-image: url("add.png");
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
 #add_main_working_item {
-	background-color: var(--light-orange);
+	background-color: var(--main-working-color);
 	background-image: url("add.png");
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
 .add_sub_working_item {
-	background-color: var(--dark-orange);
+	background-color: var(--sub-working-color);
 	background-image: url("add.png");
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
 #add_main_done_item {
-	background-color: var(--neon-green);
+	background-color: var(--main-done-color);
 	background-image: url("add.png");
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
 .add_sub_done_item {
-	background-color: var(--kelly-green);
+	background-color: var(--sub-done-color);
 	background-image: url("add.png");
 	background-repeat: no-repeat;
 	background-position: center;
